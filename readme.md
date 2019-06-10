@@ -12,4 +12,12 @@ javascript files are fingerprinted, the filename is unguessable, so it can be ho
 * The login page uses firebaseui
 * The login page takes the login then sets the cookie in the browser with the expiry date from the login token. The cookie is not made 
 secure if you are hosting at localhost, so it will work with http
-* If you succesfully log in, you will be redirected to the index, and should get the html page
+* If you successfully log in, you will be redirected to the index, and should get the html page
+* You could manipulate the html eg. inject configuration for the logged in user
+* You could redirect based on eg. user roles
+* If a cold start is required, it will happen when first loading your page, and requests after that should be fast
+
+ Partly inspired by ["RailsConf 2014 Lightning Fast Deployment of Your Rails-backed JavaScript app" by Luke Melia](https://www.youtube.com/watch?v=QZVYP3cPcWQ)
+ 
+ 
+ 

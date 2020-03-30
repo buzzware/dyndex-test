@@ -2,7 +2,7 @@
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
-    "serve": "firebase serve --only functions",
+    "serve": "firebase emulators:start --only functions",
     "shell": "firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
@@ -12,9 +12,11 @@
     "node": "8"
   },
   "dependencies": {
-    "firebase-admin": "~7.0.0",
-    "firebase-functions": "^2.3.0",
-    "tough-cookie": "^3.0.1"
+    "@awaitjs/express": "^0.5.0",
+    "express": "^4.17.1",
+    "firebase-admin": "^8.6.0",
+    "firebase-functions": "^3.3.0",
+    "tough-cookie": "^4.0.0"
   },
   "devDependencies": {
     "firebase-functions-test": "^0.1.6"

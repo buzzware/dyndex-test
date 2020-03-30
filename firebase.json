@@ -1,16 +1,10 @@
 {
   "hosting": {
+    "site": "fb-auth-ex",
     "public": "public",
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**"
-    ],
     "headers": [
       {
-        "source": "**",
+        "source": "/**",
         "headers": [
           {
             "key": "Cache-Control",
@@ -29,17 +23,31 @@
         ]
       }
     ],
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
     "rewrites": [
       {
-        "source": "/", "function": "index"
+        "source": "/#/**",
+        "function": "front"
       },
       {
-        "source": "/#/**",
-        "function": "index"
+        "source": "/",
+        "function": "front"
+      },
+      {
+        "source": "/login", "destination": "/login/index.html"
       }
     ]
   },
-  "storage": {
-    "rules": "storage.rules"
+  "emulators": {
+    "functions": {
+      "port": 5001
+    },
+    "hosting": {
+      "port": 5000
+    }
   }
 }

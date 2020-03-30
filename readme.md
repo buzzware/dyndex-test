@@ -1,9 +1,8 @@
-# dyndex-test
 ## Dynamic index test project for Single Page Apps with Firebase Authentication
 
 by Gary McGhee
 
-Please refer to the article https://medium.com/@gazmcghee/secure-authenticated-single-page-application-spa-hosting-with-firebase-8732b13af628
+Please refer to the article [Secure Authenticated Single Page Application (SPA) hosting with Firebase](https://medium.com/@gazmcghee/secure-authenticated-single-page-application-spa-hosting-with-firebase-8732b13af628)
 for an indepth explanation.
 
 Notes : 

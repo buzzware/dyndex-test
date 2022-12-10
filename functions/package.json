@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@awaitjs/express": "^0.5.0",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "firebase-admin": "^8.6.0",
     "firebase-functions": "^3.3.0",
     "tough-cookie": "^4.0.0"
